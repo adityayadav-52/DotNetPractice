@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h1>This is my first <span style="color:red;">Modal</span></h1>
+
+<h2 style="color:red;">Student Details</h2>
+
+@model FirstWebApp.Models.MyModal
+
+@Html.TextBoxFor(a=>a.Id)
+@Html.TextBoxFor(a=>a.Name)
+@Html.TextBoxFor(a=>a.Email)
+@Html.TextBoxFor(a=>a.Salary)
+@Html.TextBoxFor(a=>a.Age)

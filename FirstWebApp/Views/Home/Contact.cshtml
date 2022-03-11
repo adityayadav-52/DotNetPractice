@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "Contact Form";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p style="font-size:20px;">------------<span style="color: red;">ViewBag</span>------------</p>
+    <hr />
+    <h4>@ViewBag.abc</h4>
+    <h4>@ViewBag.abc1</h4>
+    <h4>@ViewBag.abc2</h4>
+    <h4>@ViewBag.abc3</h4>
+    <h4>@ViewBag.abc4</h4>
+    <h4>@ViewBag.abc5</h4>
+
+    <ol type="A">
+        @foreach (var item in ViewBag.List)
+        {
+            <li>@item</li>
+        }
+    </ol>
+
+    <hr />
+
+<p style="font-size:20px;">------------<span style="color:red;">ViewData</span>------------</p>
+    <hr />
+    <h4>@ViewData["abc"]</h4>
+    <h4>@ViewData["abc1"]</h4>
+    <h4>@ViewData["abc2"]</h4>
+    <h4>@ViewData["abc3"]</h4>
+    <h4>@ViewData["abc4"]</h4>
+    <h4>@ViewData["abc5"]</h4>
+
+    <ol type="I">
+        @foreach (var item in (List<string>)ViewData["List"])
+        {
+            <li>@item</li>
+        }
+    </ol>
+
+
+
+
+    <hr />
+
+<p style="font-size:20px;">------------<span style="color: red;">TempData</span>------------</p>
+    <hr />
+    <h4>@TempData["abc"]</h4>
+    <h4>@TempData["abc1"]</h4>
+    <h4>@TempData["abc2"]</h4>
+    <h4>@TempData["abc3"]</h4>
+    <h4>@TempData["abc4"]</h4>
+    <h4>@TempData["abc5"]</h4>
+
+    <ol type="1">
+        @foreach (var item in (List<string>)TempData["List"])
+        {
+            <li>@item</li>
+        }
+    </ol>
+
+
+
+
+
+    <hr />
+
+<p style="font-size:20px;">------------<span style="color:purple;">Session</span>------------</p>
+
+    <hr />
+    <h4>@Session["abc"]</h4>
+    <h4>@Session["abc1"]</h4>
+    <h4>@Session["abc2"]</h4>
+    <h4>@Session["abc3"]</h4>
+    <h4>@Session["abc4"]</h4>
+    <h4>@Session["abc5"]</h4>
+
+    <ol type="1">
+        @foreach (var item in (List<string>)Session["List"])
+        {
+            <li>@item</li>
+        }
+    </ol>
